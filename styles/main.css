@@ -166,6 +166,11 @@ article h3 {
 main {
     clear: left;
 }
+/* SlickNav */
+/* Hide the mobile menu */
+#mobile_menu {
+    display: none;
+}
 /* Media Queries */
 /* for tablet in portrait view (959px or less) */
 @media only screen and (max-width: 959px){
@@ -209,26 +214,26 @@ main {
         -webkit-column-count: 2;
         -column-count: 2;
     }
+    /* Hide the standard nav menu */
+    #nav_menu {
+        display: none;
+    }
+    /* Show the mobile menu */
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu{
+        background-color: #800000 !important;
+
+    }
 }
 /* for phone in portrait orientation (479px or less) */
 @media only screen and (max-width: 479px){
     *{
         font-size: 90%;
     }
-    /* Show the mobile menu */
-    #mobile_menu {
-        display: block;
-    }
-    #nav_menu {
-        display: none;
-    }
+}
 
-}
-/* SlickNav */
-/* Hide the mobile menu */
-#mobile_menu {
-    display: none;
-}
 
 /* ========== Selectors ==========*/
 /* When focus on the link */
