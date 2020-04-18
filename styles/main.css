@@ -35,6 +35,11 @@
 /* When hover over the main nav */
 #nav_menu ul li:hover > ul {
     display: block;
+
+}
+/* Testing the the second tier of the nav menu*/
+#nav_menu ul li ul {
+    color: green;
 }
 /* pseudo element, This make it so the "about us" does not get replaced by "Our history" */
 #nav_menu > ul::after {
