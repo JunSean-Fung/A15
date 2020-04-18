@@ -50,7 +50,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin: 0px auto 0px auto; /* parameter: top right bottom left */
-    width: 800px;
+    width: 99%; /* 800px */
+    max-width: 960px;
     border: 3px solid #931420; /*parameter: width style color */
     background: #fffded; /* set the entire background color */
 }
