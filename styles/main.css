@@ -89,7 +89,7 @@ header h3 {
 section {
     width: 54.688%; /* parent: 525px */
     float: right;
-    padding: 0 20px 20px 20px; /* parameter: top right bottom left */
+    padding: 0 20px; /* parameter: top right bottom left */
 }
 section h1 {
     font-size: 150%;
@@ -176,15 +176,12 @@ main {
 @media only screen and (max-width: 959px){
     h1{
         font-size: 135%;
-
     }
     section h2{
         font-size: 120%;
-
     }
-    aside h2{
+    aside h2 {
         font-size: 120%;
-
     }
 }
 /* Media Queries, desktop-first design */
@@ -195,11 +192,10 @@ main {
     }
     header img{
         float: none;
-
     }
     section{
         float: none;
-        width: 97.917%; /* 100-2.083 = 97.917 */
+        width: 90%;
     }
     aside{
         float: none;
@@ -232,6 +228,7 @@ main {
     *{
         font-size: 90%;
     }
+
 }
 
 
