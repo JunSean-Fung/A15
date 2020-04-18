@@ -14,7 +14,7 @@
 }
 #nav_menu ul li{
     float: left; /* set it horizontal */
-    width: 20%; /* 800/5 = 160, parent: 160px*/
+    width: 20%; /* 960/5 = 192 */
 }
 #nav_menu ul li a{
     display: block;
@@ -31,6 +31,7 @@
     position: absolute;
     top: 100%;
 }
+
 /* When hover over the main nav */
 #nav_menu ul li:hover > ul {
     display: block;
@@ -40,7 +41,9 @@
     content: " "; /* add empty space following the navigation menu */
     clear: both; /* clear the content so it does not float */
     display: block; /* display the content  as a block element */
+
 }
+/* Make the home text in navigation yellow */
 #nav_menu ul li a.current{
     color: yellow;
 }
