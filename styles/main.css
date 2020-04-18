@@ -14,7 +14,7 @@
 }
 #nav_menu ul li{
     float: left; /* set it horizontal */
-    width: 16.667%; /* 800/5 = 160, parent: 160px*/
+    width: 20%; /* 800/5 = 160, parent: 160px*/
 }
 #nav_menu ul li a{
     display: block;
@@ -50,7 +50,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin: 0 auto; /* parameter: top right bottom left */
-    width: 99%; /* Parent: 800px */
+    width: 800px; /* Parent: 800px */
     max-width: 960px;
     border: 3px solid #931420; /*parameter: width style color */
     background: #fffded; /* set the entire background color */
@@ -71,7 +71,7 @@ header {
 /* the styles for the logo(image) within the page */
 header img {
     float: left;
-    padding: 0% 3.125‬‬%; /* parent: 30px  */
+    padding: 0% 3.125%; /* parent: 30px  */
 }
 /* style for h2 within the header tag*/
 header h2 {
@@ -147,8 +147,7 @@ article {
 }
 article img {
     float: right;
-    margin: 1em;
-    margin-right: 0em; /* to make it look like the pdf and align it with the bottom border */
+    margin: 1em 0em 1em 1em;/* to make it look like the pdf and align it with the bottom border */
     border: 1px solid black;
     min-width: 150px;
     max-width: 40%;
@@ -215,9 +214,18 @@ main {
     *{
         font-size: 90%;
     }
+
+
 }
 /* SlickNav */
-
+/* Hide the mobile menu */
+#mobile_menu {
+    display: none;
+}
+/* Show the mobile menu */
+#mobile_menu {
+    display:block;
+}
 /* ========== Selectors ==========*/
 /* When focus on the link */
 a:focus {
