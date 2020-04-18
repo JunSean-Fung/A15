@@ -210,6 +210,14 @@ main {
         -column-count: 2;
     }
 }
+/* for phone in portrait orientation (479px or less) */
+@media only screen and (max-width: 479px){
+    *{
+        font-size: 90%;
+    }
+}
+/* SlickNav */
+
 /* ========== Selectors ==========*/
 /* When focus on the link */
 a:focus {
