@@ -35,11 +35,13 @@
 /* When hover over the main nav */
 #nav_menu ul li:hover > ul {
     display: block;
-
 }
 /* Testing the the second tier of the nav menu*/
-#nav_menu ul li ul {
-    color: green;
+.sub_menu {
+    display: block;
+    position: relative;
+    background-color: green;
+
 }
 /* pseudo element, This make it so the "about us" does not get replaced by "Our history" */
 #nav_menu > ul::after {
@@ -94,7 +96,7 @@ header h3 {
 
 /* ========== Section Selectors ==========*/
 section {
-    width: 54.688%; /* parent: 525px */
+    width: 71.354%; /* parent: 525px + 160 px */
     float: right;
     padding: 0 20px 20px 20px; /* parameter: top right bottom left */
 }
