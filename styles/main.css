@@ -14,7 +14,7 @@
 }
 #nav_menu ul li{
     float: left; /* set it horizontal */
-    width: 20%; /* 960/5 = 192 */
+    width: 20%; /* 800/5 = 160, parent: 160px*/
 }
 #nav_menu ul li a{
     display: block;
@@ -31,16 +31,9 @@
     position: absolute;
     top: 100%;
 }
-
 /* When hover over the main nav */
 #nav_menu ul li:hover > ul {
     display: block;
-}
-/* Testing the the second tier of the nav menu*/
-.sub_menu {
-    display: block;
-    position: relative;
-    background-color: green;
 
 }
 /* pseudo element, This make it so the "about us" does not get replaced by "Our history" */
@@ -48,9 +41,7 @@
     content: " "; /* add empty space following the navigation menu */
     clear: both; /* clear the content so it does not float */
     display: block; /* display the content  as a block element */
-
 }
-/* Make the home text in navigation yellow */
 #nav_menu ul li a.current{
     color: yellow;
 }
@@ -96,7 +87,7 @@ header h3 {
 
 /* ========== Section Selectors ==========*/
 section {
-    width: 71.354%; /* parent: 525px + 160 px */
+    width: 54.688%; /* parent: 525px */
     float: right;
     padding: 0 20px 20px 20px; /* parameter: top right bottom left */
 }
@@ -133,7 +124,6 @@ aside {
     width: 215px;
     float: right;
     padding: 0 0 20px 2.083%; /* parameter: top right bottom left(20px) */
-    color: green;
 }
 aside h2 {
     font-size: 130%;
@@ -234,7 +224,7 @@ main {
     }
     .slicknav_menu{
         background-color: #800000 !important;
-
+        text-align: right !important;
     }
 }
 /* for phone in portrait orientation (479px or less) */
