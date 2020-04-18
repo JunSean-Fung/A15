@@ -14,10 +14,10 @@
 }
 #nav_menu ul li{
     float: left; /* set it horizontal */
+    width: 16.667%; /* 800/5 = 160, parent: 160px*/
 }
 #nav_menu ul li a{
     display: block;
-    width: 160px; /* 800/5 = 160 */
     text-align: center;
     padding: 1em 0em;
     background-color: #800000;
@@ -49,8 +49,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    margin: 0px auto 0px auto; /* parameter: top right bottom left */
-    width: 99%; /* 800px */
+    margin: 0 auto; /* parameter: top right bottom left */
+    width: 99%; /* Parent: 800px */
     max-width: 960px;
     border: 3px solid #931420; /*parameter: width style color */
     background: #fffded; /* set the entire background color */
@@ -71,7 +71,7 @@ header {
 /* the styles for the logo(image) within the page */
 header img {
     float: left;
-    padding: 0px 30px 0px 30px; /* parameter: top right bottom left */
+    padding: 0% 3.125‬‬%; /* parent: 30px  */
 }
 /* style for h2 within the header tag*/
 header h2 {
@@ -86,7 +86,7 @@ header h3 {
 
 /* ========== Section Selectors ==========*/
 section {
-    width: 525px;
+    width: 54.688%; /* parent: 525px */
     float: right;
     padding: 0 20px 20px 20px; /* parameter: top right bottom left */
 }
@@ -122,7 +122,7 @@ section blockquote {
 aside {
     width: 215px;
     float: right;
-    padding: 0 0 20px 20px; /* parameter: top right bottom left */
+    padding: 0 0 20px 2.083%; /* parameter: top right bottom left(20px) */
 }
 aside h2 {
     font-size: 130%;
@@ -136,6 +136,7 @@ aside h3 {
 }
 aside img {
     padding: 0 0 1em 0;
+
 }
 
 /* ========== article Selector ==========*/
@@ -149,6 +150,8 @@ article img {
     margin: 1em;
     margin-right: 0em; /* to make it look like the pdf and align it with the bottom border */
     border: 1px solid black;
+    min-width: 150px;
+    max-width: 40%;
 }
 article h2 {
     padding-top: 0;
@@ -164,7 +167,49 @@ article h3 {
 main {
     clear: left;
 }
+/* Media Queries */
+/* for tablet in portrait view (959px or less) */
+@media only screen and (max-width: 959px){
+    h1{
+        font-size: 135%;
 
+    }
+    section h2{
+        font-size: 120%;
+
+    }
+    aside h2{
+        font-size: 120%;
+
+    }
+}
+/* for phone in landscape orientation (767px or less) */
+@media only screen and (max-width: 767px){
+    header{
+        text-align: center;
+    }
+    header img{
+        float: none;
+
+    }
+    section{
+        float: none;
+        width: 97.917%; /* 100-2.083 = 97.917 */
+    }
+    aside{
+        float: none;
+        padding-right: 2.083%; /* same as the left padding */
+        width: 97.917%;
+    }
+    article img{
+        max-width: 30%;
+    }
+    div{
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        -column-count: 2;
+    }
+}
 /* ========== Selectors ==========*/
 /* When focus on the link */
 a:focus {
