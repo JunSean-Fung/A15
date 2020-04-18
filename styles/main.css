@@ -200,7 +200,7 @@ main {
     aside{
         float: none;
         padding-right: 2.083%; /* same as the left padding */
-        width: 97.917%;
+        width: 90%;
     }
     article img{
         max-width: 30%;
