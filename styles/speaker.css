@@ -152,51 +152,6 @@ article h3 {
 main {
 	clear: left;
 }
-/* Media Queries, desktop-first design */
-/* for phone in landscape orientation (767px or less) */
-@media only screen and (max-width: 767px){
-	header{
-		text-align: center;
-	}
-	header img{
-		float: none;
-	}
-	section{
-		float: none;
-		width: 90%;
-	}
-	aside{
-		float: none;
-		padding-right: 2.083%; /* same as the left padding */
-		width: 90%;
-	}
-	article img{
-		max-width: 30%;
-	}
-	div{
-		-moz-column-count: 2;
-		-webkit-column-count: 2;
-		-column-count: 2;
-	}
-	/* Hide the standard nav menu */
-	#nav_menu {
-		display: none;
-	}
-	/* Show the mobile menu */
-	#mobile_menu {
-		display: block;
-	}
-	.slicknav_menu{
-		background-color: #800000 !important;
-	}
-}
-/* for phone in portrait orientation (479px or less) */
-@media only screen and (max-width: 479px){
-	*{
-		font-size: 90%;
-	}
-
-}
 /* ========== Selectors ==========*/
 /* When focus on the link */
 a:focus {
