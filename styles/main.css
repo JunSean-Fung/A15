@@ -121,7 +121,7 @@ section blockquote {
 
 /* ========== Aside Selectors ==========*/
 aside {
-    width: 215px;
+    width: 39.063%;
     float: right;
     padding: 0 0 20px 2.083%; /* parameter: top right bottom left(20px) */
 }
